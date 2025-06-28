@@ -1,0 +1,88 @@
+<!--
+File: index.html
+GUI Assignment 4: Part 1 Using the jQuery Plugin/UI with Your Dynamic Table
+Anh Nguyen, UMass Lowell Computer Science, anh_nguyen9@student.uml.edu
+Copyright (c) 2025 by Anh NguyenS. All rights reserved. May be freely copied or
+excerpted for educational purposes with credit to the author.
+updated by AN on June 22, 2025 at 4:05 PM
+June 27, 2025 at 5:15 PM
+Image Source:
+https://www.freepik.com/free-ai-image/beautiful-landscape-painting_396677298.htm#fromView=keyword&page=2&position=31&uuid=17b35f7c-c75a-47dd-b998-812249dae5f7&query=Japanese+Wallpaper+Anime
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width = device-width, initial-scale= 1.0">
+    <title>Multiplication Table Generator</title>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Multiplication Table Generator</h1>
+        <img src="images/beautiful-landscape-painting_23-2151894731.jpg" alt="">
+        <form id="tableGrid">
+            <label for="startingR">Starting Value of Row:</label>
+            <input type="text" id="startingR" name="startingR" required>
+            
+            <label for="endingR">Ending Value of Row:</label>
+            <input type="text" id="endingR" name="endingR" required>
+            
+            <label for="startingC">Starting Value of Column:</label>
+            <input type="text" id="startingC" name="startingC" required>
+            
+            <label for="endingC">Ending Value of Column:</label>
+            <input type="text" id="endingC" name="endingC" required>
+            
+            <button type="submit">Generate Table</button>
+        </form>
+        <div id="error"></div>
+        <div id="tableContainer">
+            <table id="multiplicationTable"></table>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiplication Table Generator</title>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Multiplication Table Generator</h1>
+        <form id="tableForm">
+            <label for="startH">Start Horizontal:</label>
+            <input type="text" id="startH" name="startH" required>
+            
+            <label for="endH">End Horizontal:</label>
+            <input type="text" id="endH" name="endH" required>
+            
+            <label for="startV">Start Vertical:</label>
+            <input type="text" id="startV" name="startV" required>
+            
+            <label for="endV">End Vertical:</label>
+            <input type="text" id="endV" name="endV" required>
+            
+            <button type="submit">Generate Table</button>
+        </form>
+        <div id="error"></div>
+        <div id="tableContainer">
+            <table id="multiplicationTable"></table>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.5/dist/jquery.validate.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html> -->
